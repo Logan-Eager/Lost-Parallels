@@ -29,7 +29,6 @@ public class Jump_script : MonoBehaviour
     {
         if (collision.CompareTag("ground"))
         {
-            Debug.Log("yeet");
             grounded = true;
         }
     }
