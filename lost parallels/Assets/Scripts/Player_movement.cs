@@ -6,11 +6,12 @@ public class Player_movement : MonoBehaviour
 {
     public float moveSpeed;
     public float sprintSpeed;
+    public GameObject Interuptmenu;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Interuptmenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,5 +22,10 @@ public class Player_movement : MonoBehaviour
         float speed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
 
         transform.position += moveDirection * speed * Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            {
+            Interuptmenu.SetActive(!Interuptmenu.activeSelf);
+        }
     }
 }
