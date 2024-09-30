@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
-    public float moveSpeed;
-    public float sprintSpeed;
+
+    private float horizontal;
+    private float speed = 200f;
+    private bool isFacingRight = true;
+
+    [SerializeField] private Rigidbody2D rb;
+
     public GameObject Interuptmenu;
 
     // Start is called before the first frame update
@@ -17,15 +23,30 @@ public class Player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
-        float speed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
+        horizontal = Input.GetAxisRaw("Horizontal");
 
-        transform.position += moveDirection * speed * Time.deltaTime;
+        Flip();
 
         if (Input.GetKeyDown(KeyCode.Escape))
-            {
+        {
             Interuptmenu.SetActive(!Interuptmenu.activeSelf);
+        }
+    }
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        rb.AddForce(rb.velocity);
+    }
+
+    void Flip()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight= !isFacingRight;
+            Vector3 localscale = transform.localScale;
+            localscale.x *= -1f;
+            transform.localScale = localscale;  
         }
     }
 }
