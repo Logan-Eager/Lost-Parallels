@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform gameTransform;
     [SerializeField] private Transform piecePrefab;
 
+    public Boolean puzzle_solved = false;
+
     private List<Transform> pieces;
     private int emptyLocation;
     private int size;
     private bool shuffling = false;
+    public bool solved = false;
 
     private void CreateGamePieces(float gapThickness)
     {
@@ -70,7 +74,7 @@ public class GameManager : MonoBehaviour
         //checks completion
         if (!shuffling && CheckCompletion())
         {
-            
+            puzzle_solved = true;
         }
 
         // on click sends out ray to select piece
