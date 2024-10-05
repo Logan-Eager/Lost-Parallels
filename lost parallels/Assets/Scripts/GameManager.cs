@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
         while (count < (size * size * size)) // Shuffle enough times based on board size
         {
             // Pick a random piece to try to move
-            int rnd = Random.Range(0, size * size);
+            int rnd = UnityEngine.Random.Range(0, size * size);
 
             // Prevent the shuffle from reversing the previous move by checking last empty location
             if (rnd == last) continue;

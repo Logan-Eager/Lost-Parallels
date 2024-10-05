@@ -22,13 +22,13 @@ public class PuzzleActivator : MonoBehaviour
                 puzzleThing.SetActive(true);
             }
         }
-        public GameManagerScript.GetComponent() = puzzle_solved
-        if (puzzle_solved == true)
-            {
-            puzzleThing.SetActive(false);
-            m_camera.SetActive(true);
-            IsUnlocked = true;
-        }
+        // public GameManagerScript.GetComponent() = puzzle_solved
+        // if (puzzle_solved == true)
+        //     {
+        //     puzzleThing.SetActive(false);
+        //     m_camera.SetActive(true);
+        //     IsUnlocked = true;
+        // }
     }
     
 }
