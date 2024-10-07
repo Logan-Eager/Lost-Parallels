@@ -65,8 +65,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         pieces = new List<Transform>();
-        size = 3;
+        size = 2;
         CreateGamePieces(0.01f);
+        Shuffle();
     }
 
     void Update()
@@ -124,6 +125,9 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < pieces.Count; i++)
         {
+
+            if (i == emptyLocation) continue;
+
             if (pieces[i].name != $"{i}")
             {
                 return false;

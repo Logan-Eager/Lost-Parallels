@@ -9,7 +9,8 @@ public class PuzzleActivator : MonoBehaviour
 {
     public GameObject puzzleThing;
     public GameObject m_camera;
-    public GameObject GameManagerScript;
+    private portal_behaviour portalBehaviour;
+    private GameManager gameManager;
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,13 +23,13 @@ public class PuzzleActivator : MonoBehaviour
                 puzzleThing.SetActive(true);
             }
         }
-        // public GameManagerScript.GetComponent() = puzzle_solved
-        // if (puzzle_solved == true)
-        //     {
-        //     puzzleThing.SetActive(false);
-        //     m_camera.SetActive(true);
-        //     IsUnlocked = true;
-        // }
+
+         if (gameManager.puzzle_solved == true)
+        {
+            puzzleThing.SetActive(false);
+            m_camera.SetActive(true);
+            portalBehaviour.IsUnlocked = true;
+        }
     }
     
 }
