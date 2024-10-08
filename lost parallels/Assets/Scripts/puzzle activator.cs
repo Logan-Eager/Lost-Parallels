@@ -9,9 +9,24 @@ public class PuzzleActivator : MonoBehaviour
 {
     public GameObject puzzleThing;
     public GameObject m_camera;
-    private portal_behaviour portalBehaviour;
-    private GameManager gameManager;
+    public portal_behaviour portalBehaviour;
+    public GameManager gameManager;
 
+    private void Start()
+    {
+        FindObjectOfType<GameManager>();
+        FindObjectOfType<portal_behaviour>();
+    }
+
+    private void Update()
+    {
+        if (gameManager.puzzle_solved == true)
+        {
+            puzzleThing.SetActive(false);
+            m_camera.SetActive(true);
+            portalBehaviour.IsUnlocked = true;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,14 +37,10 @@ public class PuzzleActivator : MonoBehaviour
                 m_camera.SetActive(false);
                 puzzleThing.SetActive(true);
             }
-        }
+        }   
 
-         if (gameManager.puzzle_solved == true)
-        {
-            puzzleThing.SetActive(false);
-            m_camera.SetActive(true);
-            portalBehaviour.IsUnlocked = true;
-        }
+
+         
     }
     
 }

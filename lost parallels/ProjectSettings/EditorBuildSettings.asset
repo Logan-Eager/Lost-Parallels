@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/cutscenes/level 1 to level 2 cutscene.unity
+    guid: 9e41ebd4d16efe748a1ec50c2d0ecda7
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 08e7a2df2f06f014085b5a48248e8e2a
+  - enabled: 1
     path: Assets/Scenes/cutscenes/End cutscene.unity
     guid: 0751e2ae52078be46b6432df6a9c0df4
-  - enabled: 1
-    path: Assets/Scenes/Puzzle 1.unity
-    guid: fb0d841f3f3f8cb418a748842691a7e9
   m_configObjects: {}

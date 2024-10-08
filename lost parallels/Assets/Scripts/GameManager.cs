@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform gameTransform;
     [SerializeField] private Transform piecePrefab;
 
-    public Boolean puzzle_solved = false;
+    public bool puzzle_solved = false;
 
     private List<Transform> pieces;
     private int emptyLocation;
@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
     // defines size and calls main create function
     void Start()
     {
+        
         pieces = new List<Transform>();
         size = 2;
         CreateGamePieces(0.01f);
