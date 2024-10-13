@@ -9,7 +9,12 @@ public class Start_game : MonoBehaviour
 
     public void load_level()
     {
+        Invoke("load_scene", 1);
+        
+    }
+    
+    public void load_scene()
+    {
         SceneManager.LoadScene(level_name);
     }
- 
 }

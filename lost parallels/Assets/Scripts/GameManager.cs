@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     {
         
         pieces = new List<Transform>();
-        size = 2;
+        size = 3;
         CreateGamePieces(0.01f);
         Shuffle();
     }

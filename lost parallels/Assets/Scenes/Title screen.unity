@@ -628,6 +628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 345827214}
   - component: {fileID: 345827215}
+  - component: {fileID: 345827216}
   m_Layer: 0
   m_Name: lost parallels
   m_TagString: Untagged
@@ -702,6 +703,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &345827216
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345827213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab2aa63cb9c7e3b4eaa76caf6c69db1f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &395016635
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395016636}
   - component: {fileID: 395016637}
+  - component: {fileID: 395016638}
   m_Layer: 0
   m_Name: volume slier
   m_TagString: Untagged
@@ -806,6 +829,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &395016638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395016635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a4a6bcc56ffe34eabdac8394ab64a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 395016637}
 --- !u!1 &415129152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,7 +3050,7 @@ RectTransform:
   m_GameObject: {fileID: 1726094318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.306487}
-  m_LocalScale: {x: 1.2408669, y: 2.4122353, z: 4.7271123}
+  m_LocalScale: {x: 1.920862, y: 3.7341402, z: 7.3175697}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 193057078}
@@ -3022,7 +3058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 640, y: -402}
+  m_AnchoredPosition: {x: 627, y: -385}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726094320
