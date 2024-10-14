@@ -10,10 +10,13 @@ public class Jump_script : MonoBehaviour
 
     public Rigidbody2D playerBody;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         playerBody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class Jump_script : MonoBehaviour
         if (collision.CompareTag("ground"))
         {
             grounded = true;
+            animator.SetBool(animator.IsFalling, false);
         }
     }
 
@@ -38,6 +42,7 @@ public class Jump_script : MonoBehaviour
         if (collision.CompareTag("ground"))
         {
             grounded = false;
+            animator.SetBool(animator.IsFalling, true);
         }
     }
 }
