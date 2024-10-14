@@ -17,11 +17,11 @@ public class Player_movement : MonoBehaviour
     public GameObject Interuptmenu;
 
     // Start is called before the first frame update
-    void Start(GameObject gameObject)
+    void Start()
     {
         Interuptmenu.SetActive(false);
         FindObjectOfType<Jump_script>();
-        animator = gameObject.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,12 +42,18 @@ public class Player_movement : MonoBehaviour
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         rb.AddForce(rb.velocity);
-        if (rb.velocity != Vector2.zero && animator.IsFalling is not true){
-            animator.SetBool(animator.IsRunning, true);
+        if (rb.velocity != Vector2.zero && animator.GetBool("IsFalling") != true){
+            animator.SetBool("IsRunning", true);
         }
+
+        if (horizontal != 0)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+
         else
         {
-            animator.SetBool(animator.IsRunning, false);
+            animator.SetBool("IsRunning", false);
         }
     }
 

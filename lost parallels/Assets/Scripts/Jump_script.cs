@@ -33,7 +33,7 @@ public class Jump_script : MonoBehaviour
         if (collision.CompareTag("ground"))
         {
             grounded = true;
-            animator.SetBool(animator.IsFalling, false);
+            animator.SetBool("IsFalling", false);
         }
     }
 
@@ -42,7 +42,7 @@ public class Jump_script : MonoBehaviour
         if (collision.CompareTag("ground"))
         {
             grounded = false;
-            animator.SetBool(animator.IsFalling, true);
+            animator.SetBool("IsFalling", true);
         }
     }
 }
