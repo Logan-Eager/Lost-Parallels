@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 702202889}
-  level_name: Level 2
+  level_name: Title screen
 --- !u!1 &885623987
 GameObject:
   m_ObjectHideFlags: 0

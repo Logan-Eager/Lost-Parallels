@@ -46,11 +46,6 @@ public class Player_movement : MonoBehaviour
             animator.SetBool("IsRunning", true);
         }
 
-        if (horizontal != 0)
-        {
-            animator.SetBool("IsRunning", true);
-        }
-
         else
         {
             animator.SetBool("IsRunning", false);
