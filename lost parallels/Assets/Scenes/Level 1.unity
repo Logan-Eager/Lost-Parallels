@@ -1802,7 +1802,7 @@ FrictionJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 7.9198546, y: 5.3332405}
+  m_ConnectedAnchor: {x: 7.9198546, y: 5.46436}
   m_MaxForce: 1
   m_MaxTorque: 1
 --- !u!1 &908862480
@@ -2223,7 +2223,7 @@ FrictionJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 7.9198546, y: 5.3332405}
+  m_ConnectedAnchor: {x: 7.9198546, y: 5.46436}
   m_MaxForce: 1
   m_MaxTorque: 1
 --- !u!50 &1377544139
@@ -4085,7 +4085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1451657079808915913, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 92
+      value: 82.9
       objectReference: {fileID: 0}
     - target: {fileID: 1451657079808915913, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4141,19 +4141,23 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: fa2f7e22c7270b1469e9d6a12aae4ebc, type: 3}
     - target: {fileID: 6900757965626614420, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_Size.x
-      value: 0.330015
+      value: 0.5053496
       objectReference: {fileID: 0}
     - target: {fileID: 6900757965626614420, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_Size.y
-      value: 1.4337919
+      value: 0.07713606
       objectReference: {fileID: 0}
     - target: {fileID: 6900757965626614420, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_Offset.x
-      value: 0.05876222
+      value: -0.0009905164
       objectReference: {fileID: 0}
     - target: {fileID: 6900757965626614420, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_Offset.y
-      value: -0.040306948
+      value: -0.6903055
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900757965626614420, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
+      propertyPath: m_Direction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7188031752961116107, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
       propertyPath: m_Controller
