@@ -12,11 +12,14 @@ public class Jump_script : MonoBehaviour
 
     public Animator animator;
 
+    AudioSource jump_sound;
+
     // Start is called before the first frame update
     void Start()
     {
         playerBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        jump_sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,8 @@ public class Jump_script : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
+            jump_sound.pitch = Random.Range(0.8f,1.0f);
+            jump_sound.Play();
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
         }
     }

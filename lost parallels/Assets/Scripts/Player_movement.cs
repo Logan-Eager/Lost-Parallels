@@ -12,6 +12,7 @@ public class Player_movement : MonoBehaviour
     public Jump_script jumpscript;
     public Animator animator;
 
+
     [SerializeField] private Rigidbody2D rb;
 
     public GameObject Interuptmenu;
@@ -19,9 +20,12 @@ public class Player_movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false; // Hides the cursor
+        Cursor.lockState = CursorLockMode.Locked;
         Interuptmenu.SetActive(false);
         FindObjectOfType<Jump_script>();
         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -35,6 +39,9 @@ public class Player_movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Interuptmenu.SetActive(!Interuptmenu.activeSelf);
+            Cursor.visible = true; // Shows the cursor
+            Cursor.lockState = CursorLockMode.None; // Unlocks the cursor
+
         }
     }
 

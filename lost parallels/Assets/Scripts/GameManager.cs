@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,7 +16,6 @@ public class GameManager : MonoBehaviour
     private int size;
     private bool shuffling = false;
     public bool solved = false;
-
     private void CreateGamePieces(float gapThickness)
     {
         //width of each tile
@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
         size = 3;
         CreateGamePieces(0.01f);
         Shuffle();
+
     }
 
     void Update()
@@ -77,6 +78,7 @@ public class GameManager : MonoBehaviour
         if (!shuffling && CheckCompletion())
         {
             puzzle_solved = true;
+
         }
 
         // on click sends out ray to select piece
@@ -138,20 +140,13 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    private IEnumerator WaitShuffle(float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        Shuffle();
-        shuffling = false;
-    }
-
     // brute force shuffling
     private void Shuffle()
     {
         int count = 0;
         int last = emptyLocation; // Track the last empty space to avoid reversing the same move
 
-        while (count < (size * size * size)) // Shuffle enough times based on board size
+        while (count < (500)) // Shuffle enough times based on board size
         {
             // Pick a random piece to try to move
             int rnd = UnityEngine.Random.Range(0, size * size);
