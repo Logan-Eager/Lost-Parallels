@@ -30,6 +30,8 @@ public class PuzzleActivator : MonoBehaviour
             puzzleThing.SetActive(false);
             m_camera.SetActive(true);
             portalBehaviour.IsUnlocked = true;
+            Cursor.visible = false; // Hides the cursor
+            Cursor.lockState = CursorLockMode.Locked;
             correct_noise.Play();
             hasplayedsound = true;
         }
@@ -37,12 +39,14 @@ public class PuzzleActivator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && gameManager.puzzle_solved is not true)
         {
             if (puzzleThing != null)
             {
                 m_camera.SetActive(false);
                 puzzleThing.SetActive(true);
+                Cursor.visible = true; // Shows the cursor
+                Cursor.lockState = CursorLockMode.None; // Unlocks the cursor
             }
         }   
 

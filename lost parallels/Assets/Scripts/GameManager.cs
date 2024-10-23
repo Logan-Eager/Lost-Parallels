@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        Cursor.visible = true; // Shows the cursor
+        Cursor.lockState = CursorLockMode.None; // Unlocks the cursor
         //checks completion
         if (!shuffling && CheckCompletion())
         {

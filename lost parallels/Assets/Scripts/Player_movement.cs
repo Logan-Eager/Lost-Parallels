@@ -39,8 +39,24 @@ public class Player_movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Interuptmenu.SetActive(!Interuptmenu.activeSelf);
-            Cursor.visible = true; // Shows the cursor
-            Cursor.lockState = CursorLockMode.None; // Unlocks the cursor
+
+            if (Interuptmenu.activeSelf)
+            {
+                Cursor.visible = true; // Shows the cursor
+                Cursor.lockState = CursorLockMode.None; // Unlocks the cursor
+                
+            }
+
+            else
+            {
+                Cursor.visible = false; // Hides the cursor
+                Cursor.lockState = CursorLockMode.Locked; // Locks cursor
+            }
+            
+
+        }
+        if (Interuptmenu.activeSelf)
+        {
 
         }
     }
