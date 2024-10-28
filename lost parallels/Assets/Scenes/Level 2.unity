@@ -7789,6 +7789,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 153457241808091292, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 5531299086890580441}
+    - target: {fileID: 153457241808091292, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 153457241808091292, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 153457241808091292, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 153457241808091292, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1088811711194524240, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7873,6 +7893,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2453947277506246961, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2590590148068182446, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
       propertyPath: m_Name
       value: Interrupt menu (1) 1
@@ -7880,6 +7904,10 @@ PrefabInstance:
     - target: {fileID: 2590590148068182446, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508560648039980810, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: 3864764477863002035, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
       propertyPath: m_IsActive
@@ -7916,6 +7944,30 @@ PrefabInstance:
     - target: {fileID: 7684521085943550258, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898780365951530007, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 5531299086890580441}
+    - target: {fileID: 7898780365951530007, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898780365951530007, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898780365951530007, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898780365951530007, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966323009514953066, guid: 3f533a85ae22fef43abde0739ea72043, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.44
       objectReference: {fileID: 0}
     - target: {fileID: 3864764477863002035, guid: d0d08bfbbfd8b184e9df35e301f58d71, type: 3}
       propertyPath: m_IsActive
@@ -8142,6 +8194,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 519420029}
   m_SourcePrefab: {fileID: 100100000, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
+--- !u!20 &5531299086890580441 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7166482566982714202, guid: a3553c9a07844c54c905c204ea8cbbd5, type: 3}
+  m_PrefabInstance: {fileID: 5531299086890580440}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6159931756616616190
 PrefabInstance:
   m_ObjectHideFlags: 0
