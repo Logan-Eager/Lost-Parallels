@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Transform gameTransform;
     [SerializeField] private Transform piecePrefab;
-
+    [SerializeField] private GameObject NoobButton;
     public bool puzzle_solved = false;
 
     private List<Transform> pieces;
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         size = 3;
         CreateGamePieces(0.01f);
         Shuffle();
-
+        Invoke("ShowNoobButton", 60);
     }
 
     void Update()
@@ -142,8 +142,13 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    private void ShowNoobButton()
+    {
+        NoobButton.SetActive(true);
+    }
+
     // brute force shuffling
-    private void Shuffle()
+    public void Shuffle()
     {
         int count = 0;
         int last = emptyLocation; // Track the last empty space to avoid reversing the same move
@@ -184,5 +189,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    
 
 }

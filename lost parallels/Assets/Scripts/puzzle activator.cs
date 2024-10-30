@@ -53,5 +53,10 @@ public class PuzzleActivator : MonoBehaviour
 
          
     }
+
+    public void BadPlayerSkillIssue()
+    {
+        gameManager.puzzle_solved = true;
+    }
     
 }
