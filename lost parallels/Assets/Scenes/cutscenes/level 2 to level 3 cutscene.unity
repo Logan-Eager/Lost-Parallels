@@ -802,14 +802,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1164325076}
   lines:
-  - 'Kid: Why do you keep running? Why are you so afraid?'
-  - 'Driver: Because... what if it all ends here. What if theres nothing waiting
-    for me.'
-  - 'Driver: I''ve spent my whole life ignoring death and now im here, and I dont
-    want to leave.'
-  - 'Kid: Its okay. Im scared too but... I''ll go with you.'
-  - 'Driver: Fine. I''m sorry you were taken so soon because of me... I will pay
-    you back as much as its worth by accepting death alongside you.'
+  - 'Kid: You again...'
+  - 'Driver: Listen im sorry about whats happening but theres no use in fighting
+    this.'
+  - "Kid: \u2026"
+  - 'Driver: I know its difficult but you just need to let go. We can go together.'
+  - 'Kid: Never, I''ve already come this far and I refuse to give up now!'
   textSpeed: 0.07
   destination: Level 3
   kidtalking: {fileID: 1060292187}

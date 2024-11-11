@@ -727,7 +727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I am a noob
+  m_text: Give Up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b389c6f0c7c96634b87b53b853a17121, type: 2}
   m_sharedMaterial: {fileID: 1593066269391308048, guid: b389c6f0c7c96634b87b53b853a17121, type: 2}

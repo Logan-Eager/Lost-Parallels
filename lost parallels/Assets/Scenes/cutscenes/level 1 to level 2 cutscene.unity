@@ -346,16 +346,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1203710871}
   lines:
-  - 'Kid: Hey, arent you the driver from before I ended up here?'
-  - 'Driver: Yeah, wait arent you that kid that was walking before... I...'
-  - 'Driver: Wait is this death? It cant be.'
-  - 'Kid: Even so, can we avoid it? Is there such reason we should run from it, if
-    its impending anyways?'
-  - 'Driver: I havent done anything with my life, I cant die now.'
-  - 'Kid: We have to move on. There''s something else waiting for us.'
-  - 'Driver: Move on? Hell no, that''s terrifying. What if there''s nothing after
-    this? What if we just... disappear?'
-  - The driver runs off and dissipates into static
+  - 'Driver: What the heck? Wait aren''t you that kid that was walking before...
+    I...'
+  - 'Kid: I can''t believe it- is this death?'
+  - 'Driver: I''m sorry kid... this is all my fault...'
+  - 'Kid: I haven''t got to live my life, surely there''s a way I can-'
+  - 'Driver: I know its difficult but we cant fight nature kid.'
+  - 'Kid: To heck with that! I''m out of here. '
   textSpeed: 0.07
   destination: Level 2
   kidtalking: {fileID: 909123108}
